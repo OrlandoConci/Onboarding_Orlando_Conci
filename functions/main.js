@@ -2,6 +2,8 @@ console.log("Starting Javascript...")
 
 //------------------------------------ Difficulty Level: Low ------------------------------------
 
+//----- (1) (2) (3) (4) (5) (6)------
+
 function add(num1, num2) {
     return num1 * num2
 }
@@ -18,12 +20,16 @@ console.log(suma(numero1, numero2))
 
 //------------------------------------ Difficulty Level: Medium ------------------------------------
 
+//----- (1)------
+
 function greet(name) {
     console.log(`¡Hola ${name}! Un gusto tenerte por aquí.`)
 }
 
 let nombreIngresado = "Orlando"
 greet(nombreIngresado)
+
+//----- (2)------
 
 let multiplicar = function(num1, num2) {
     return num1 * num2
@@ -36,13 +42,19 @@ entrada1 = 200
 entrada2 = 3
 console.log(multiplicar(entrada1, entrada2))
 
+//----- (3)------
+
 function calcularArea(base, altura) {
     return base*altura
 }
 
+//----- (4)------
+
 function calcularPerimetro(lado1, lado2, lado3) {
     return lado1 + lado2 + lado3
 }
+
+//----- (5)------
 
 function totalCompra (precio, cantidad) {
     let total = precio * cantidad
@@ -64,6 +76,8 @@ let precio3 = 10
 let cantidad3 = 10
 console.log(totalCompra(precio3, cantidad3))
 
+//----- (6)------
+
 function isAnAdult(edad) {
     if (edad >= 18) {
         return "Tú eres adulto"
@@ -80,6 +94,8 @@ console.log(isAnAdult(10))
 console.log(isAnAdult(-10))
 
 //------------------------------------ Difficulty Level: High ------------------------------------
+
+//----- (1)------
 
 function calculadorDeImpuestos(ingresosAnuales) {
     let impuestosAPagar = ``
@@ -99,6 +115,8 @@ console.log(calculadorDeImpuestos(500))
 console.log(calculadorDeImpuestos(13000))
 console.log(calculadorDeImpuestos(25000))
 console.log(calculadorDeImpuestos(-100))
+
+//----- (2)------
 
 function validarDiaHabil(dia) {
     let mensaje = ""
@@ -135,6 +153,8 @@ console.log(validarDiaHabil(7))
 console.log(validarDiaHabil(8))
 console.log(validarDiaHabil("Hola"))
 
+//----- (3)------
+
 function procesarDatos (nombre, apellido, edad) {
     let objeto = ""
     if (nombre == "") {
@@ -164,6 +184,8 @@ if (procesarDatos(nombre, apellido, edad)) {
     console.log(procesarDatos(nombre, apellido, edad))
 }
 
+//----- (4)------
+
 function saludar(nombre) {
     return `Hola!, mi nombre es ${nombre}`
 }
@@ -182,3 +204,5 @@ let anioNacimiento = +prompt("Ingrese su año de nacimiento")
 let anioActual = +prompt("Ingrese el año actual")
 
 present()
+
+//--------------------------------- Fin ---------------------------------

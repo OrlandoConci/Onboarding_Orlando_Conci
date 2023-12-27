@@ -2,6 +2,8 @@ console.log("Starting javascript...")
 
 // -------------------------- Difficulty Level: Low --------------------------
 
+//----- (1) (2) (3) (4) (5) (6) (7) ------
+
 let myName = "Orlando"
 console.log(myName)
 
@@ -20,10 +22,14 @@ console.log(presentationText)
 
 // -------------------------- Difficulty Level: Medium --------------------------
 
+//----- (1)------
+
 let sumAges = myAge + petAge
 let subtractAges = myAge - petAge
 let productAges = myAge * petAge
 let divisionAges  = myAge / petAge
+
+//----- (2)------
 
 let student = {
     name: "Ricardo",
@@ -41,6 +47,8 @@ console.log(`Edad: ${student.age} años.`)
 console.log(`Regular: ${student.regular}.`)
 console.log(`Legajo: ${student.legajo}.`)
 
+//----- (3)------
+
 let pet = {
     name: "Andy",
     color: "Naranja",
@@ -57,6 +65,8 @@ console.log(`Edad: ${pet.age} años.`)
 console.log(`Peso: ${pet.weight} kg.`)
 console.log(`Manchas: ${pet.stains}.`)
 
+//----- (4)------
+
 let fruits = ["peras", "manzanas", "uvas", "duraznos", "mandarinas"]
 
 console.log(fruits)
@@ -69,10 +79,14 @@ console.log(fruits[4])
 
 // -------------------------- Difficulty Level: High --------------------------
 
+//----- (1)------
+
 let edadIngresda = Number(prompt("Ingrese su edad"))
 let IamAdult = edadIngresda >= 18
 
 console.log(`Soy un adulto: ${IamAdult}`)
+
+//----- (2)------
 
 let numbers = [321, 456, 987, 537, 159]
 
@@ -83,6 +97,8 @@ console.log(numbers[1])
 console.log(numbers[2])
 console.log(numbers[3])
 console.log(numbers[4])
+
+//----- (3)------
 
 let family = [
     {nombre: "Pedro", miembro: "Padre"},
@@ -99,6 +115,8 @@ console.log(family[1])
 console.log(family[2])
 console.log(family[3])
 console.log(family[4])
+
+//----- (4)------
 
 let randomText = `${family[4].nombre} tiene a la venta ${numbers[3]} ${fruits[1]}.`
 console.log(randomText)

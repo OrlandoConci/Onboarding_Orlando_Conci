@@ -2,6 +2,8 @@ console.log("Starting javascript...")
 
 //--------------------------------- Difficulty Level: Low ---------------------------------
 
+//----- (1)------
+
 let num1 = 4
 let num2 = 5
 
@@ -11,6 +13,7 @@ if (num1 > num2) {
     console.log(`El mayor es: ${num2}`)
 }
 
+//----- (2)------
 
 if (num1 > num2) {
     console.log(`Es mayor es: ${num1}`)
@@ -20,11 +23,15 @@ if (num1 > num2) {
     console.log(`El mayor es: ${num2}`)
 }
 
+//----- (3)------
+
 if (num1 == num2) {
     console.log(`Los números son iguales.`)
 } else {
     console.log(`Los números no son iguales`)
 }
+
+//----- (4)------
 
 let date1 = "2018-9-2"
 let date2 = "2023-7-5"
@@ -37,6 +44,8 @@ if (date1 > date2) {
     console.log(`Las fechas son las mismas`)
 }
 
+//----- (5)------
+
 date1 = "2022-12-2"
 date2 = "2020-3-2"
 
@@ -47,6 +56,8 @@ if (date1 > date2) {
 } else {
     console.log(`Las fechas son las mismas`)
 }
+
+//----- (6)------
 
 let number1 = 5
 let number2 = 7
@@ -64,6 +75,8 @@ if (number1 > number2 && number1 > number3) {
 
 //--------------------------------- Difficulty Level: Medium ---------------------------------
 
+//----- (1)------
+
 let colorIngresado = prompt("Ingrese 'rojo', 'azul' o 'verde': ")
 
 switch (colorIngresado){
@@ -80,6 +93,8 @@ switch (colorIngresado){
         console.log("Ingreso incorrecto")
         break
 }
+
+//----- (2)------
 
 let numero1 = +prompt("Ingrese el número 1 (valor del 1 al 100):")
 let numero2 = +prompt("Ingrese el número 2 (valor del 1 al 100):")
@@ -104,6 +119,8 @@ if (numero1 >= 1 && numero1 <= 100 && numero2 >= 1 && numero2 <= 100 && (operado
     console.error("datos ingresados incorrectos.")
 }
 
+//----- (3)------
+
 let persona1 = {
     name: "Juan",
     age: 39,
@@ -126,6 +143,8 @@ if (persona1.height > persona2.height && persona1.age > persona2.age) {
     console.log(`${persona2.name} es más alta que ${persona1.name}, y ${persona1.name} es mayor que ${persona2.name}`)
 }
 
+//----- (4)------
+
 let nombre = prompt("Ingresa tu nombre")
 let edad = Number(prompt("Ingresa tu edad"))
 let altura = Number(prompt("Ingresa tu altura"))
@@ -136,6 +155,8 @@ if (edad >= 18 && altura > 110 && vision >= 8) {
 } else {
     console.log("No te encuentras apto para manejar")
 }
+
+//----- (5)------
 
 let edadIngresada = Number(prompt("Ingrese la edad a evaluar"))
 
@@ -153,6 +174,8 @@ if (edadIngresada >= 0 && edadIngresada <= 12) {
 } else {
     alert(`Edad inválida`)
 }
+
+//----- (6)------
 
 let opcion = Number(prompt("Ingrese un valor del 1 al 3"))
 if (opcion >= 1 && opcion <= 3) {
@@ -176,6 +199,8 @@ if (opcion >= 1 && opcion <= 3) {
 }
 
 //--------------------------------- Difficulty Level: High ---------------------------------
+
+//----- (1)------
 
 let nombreCliente = prompt("Ingrese el nombre del cliente")
 let pase = prompt("Tipo de pase (Ingrese número 1-vip  2-normal)")

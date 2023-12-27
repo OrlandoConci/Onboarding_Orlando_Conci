@@ -1,34 +1,41 @@
-// console.log("Starting Javascript...")
+console.log("Starting Javascript...")
 
-// // --------------------------------- Difficulty Level: Low ---------------------------------
-// function validarDesdeHasta(inicial, final) {
-//     let primeraVuelta = true;
-//     let ingresado = ""
-//     do {
-//         if (primeraVuelta == true) {
-//             ingresado = +prompt(`Ingrese un número del ${inicial} al ${final}`)
-//             primeraVuelta = false
-//         } else {
-//             ingresado = +prompt(`Error - Ingrese un número del ${inicial} al ${final}`)
-//         }
-//     } while(ingresado < inicial || ingresado > final)
-//     return ingresado
-// }
+// --------------------------------- Difficulty Level: Low ---------------------------------
 
-// let ingresado = validarDesdeHasta(1, 100)
-// for (let i = ingresado; i >= 0; i--) {
-//     console.log(i)
-// }
+//----- (1)------
 
-// function tablaDeMultiplicar(base) {
-//     for (let i = 0; i <= 10; i++) {
-//         console.log(`${base} x ${i} = ${base*i}.`)
-//     }
-// }
+function validarDesdeHasta(inicial, final) {
+    let primeraVuelta = true;
+    let ingresado = ""
+    do {
+        if (primeraVuelta == true) {
+            ingresado = +prompt(`Ingrese un número del ${inicial} al ${final}`)
+            primeraVuelta = false
+        } else {
+            ingresado = +prompt(`Error - Ingrese un número del ${inicial} al ${final}`)
+        }
+    } while(ingresado < inicial || ingresado > final)
+    return ingresado
+}
 
-// let numeroMultiplicar = validarDesdeHasta(1, 10)
+let ingresado = validarDesdeHasta(1, 100)
+for (let i = ingresado; i >= 0; i--) {
+    console.log(i)
+}
 
-// tablaDeMultiplicar(numeroMultiplicar)
+//----- (2)------
+
+function tablaDeMultiplicar(base) {
+    for (let i = 0; i <= 10; i++) {
+        console.log(`${base} x ${i} = ${base*i}.`)
+    }
+}
+
+let numeroMultiplicar = validarDesdeHasta(1, 10)
+
+tablaDeMultiplicar(numeroMultiplicar)
+
+//----- (3)------
 
 function acumuladorWhile() {
     let acumulador = 0
@@ -43,36 +50,52 @@ function acumuladorWhile() {
 let acumuladoEjercicio3 = acumuladorWhile()
 console.log(`El valor acumulado en el while es: ${acumuladoEjercicio3}`)
 
-// function acumuladorToWhile() {
-//     let num = ""
-//     let acumulador = 0
+//----- (4)------
 
-//     do {
-//         num = +prompt("Ingrese un número a acumular")
-//         acumulador += num
-//     } while (num !== 0)
+function acumuladorDoWhile() {
+    let num = ""
+    let acumulador = 0
 
-//     return acumulador
-// }
+    do {
+        num = +prompt("Ingrese un número a acumular")
+        acumulador += num
+    } while (num !== 0)
 
-// console.log(`El valor acumulado es: ${acumuladorToWhile()}.`)
+    return acumulador
+}
 
-// function recorrerObjeto(objeto) {
-//     for (key in objeto) {
-//         console.log(key)
-//     }
-// }
+console.log(`El valor acumulado es: ${acumuladorDoWhile()}.`)
 
-// let persona = {
-//     name: "Ricardo",
-//     lastName: "Perez",
-//     origin: "main",
-//     studies: true
-// }
+//----- (5)------
 
-// recorrerObjeto(persona)
+function recorrerObjeto(objeto) {
+    for (key in objeto) {
+        console.log(key)
+    }
+}
+
+let persona = {
+    name: "Ricardo",
+    lastName: "Perez",
+    origin: "main",
+    studies: true
+}
+
+recorrerObjeto(persona)
+
+//----- (6)------
+
+function recorrerValoresObjeto(objeto) {
+    for (key in objeto) {
+        console.log(objeto[key])
+    }
+}
+
+recorrerValoresObjeto(persona)
 
 // --------------------------------- Difficulty Level: Medium ---------------------------------
+
+//----- (1)------
 
 function ingresarHastaIgualar(acumulado) {
     let contador = 0
@@ -93,6 +116,8 @@ function ingresarHastaIgualar(acumulado) {
 
 ingresarHastaIgualar(acumuladoEjercicio3)
 
+//----- (2)------
+
 function divisores(numero) {
     for (let i=0; i<= numero; i++) {
         if (numero%i == 0) {
@@ -102,6 +127,8 @@ function divisores(numero) {
 }
 
 divisores(50)
+
+//----- (3)------
 
 function RingBell() {
 
@@ -123,6 +150,7 @@ function replicarStrings() {
 
 console.log(replicarStrings())
 
+//----- (4)------
 
 const dateLimit = "1997-8-3"
 const dates = ["1984-18-2", "1998-3-2", "1973-15-7", "2024-31-10", "2081-1-9"]
@@ -178,5 +206,41 @@ presentarFamilia(objetosFamilia)
 
 // --------------------------------- Difficulty Level: High ---------------------------------
 
+//----- (1) ------
 
+function sumarParesImpares() {
+    let pares = 0
+    let impares = 0
+    let numero = -1
+    do {
+        numero = +prompt("Ingrese un número para ser sumado")
+        if (numero%2== 0) {
+            pares += numero
+        } else {
+            impares += numero
+        }
+    } while (numero !== 0)
+    return [pares, impares]
+}
 
+[sumaPares, sumaImpares] = sumarParesImpares()
+console.log(`El total de los pares es: ${sumaPares}, y la suma de los impares es: ${sumaImpares}`)
+
+//----- (2) -----
+
+function mayorArray(arrayNumeros) {
+    let mayor = ""
+    for (let i=0; i<=arrayNumeros.length-1;i++) {
+        if (mayor == "") {
+            mayor = arrayNumeros[i]
+        } else if(arrayNumeros[i] > mayor) {
+            mayor = arrayNumeros[i]
+        }
+    }
+    return mayor
+}
+
+listaNumeros = [35, 12, 78, 21, 69, 48, 45, 75]
+alert(mayorArray(listaNumeros))
+
+//--------------------------------- Fin ---------------------------------
