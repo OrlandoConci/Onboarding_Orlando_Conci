@@ -1,0 +1,91 @@
+// console.log("Starting Javascript...")
+
+// // --------------------------------- Difficulty Level: Low ---------------------------------
+// function validarDesdeHasta(inicial, final) {
+//     let primeraVuelta = true;
+//     let ingresado = ""
+//     do {
+//         if (primeraVuelta == true) {
+//             ingresado = +prompt(`Ingrese un número del ${inicial} al ${final}`)
+//             primeraVuelta = false
+//         } else {
+//             ingresado = +prompt(`Error - Ingrese un número del ${inicial} al ${final}`)
+//         }
+//     } while(ingresado < inicial || ingresado > final)
+//     return ingresado
+// }
+
+// let ingresado = validarDesdeHasta(1, 100)
+// for (let i = ingresado; i >= 0; i--) {
+//     console.log(i)
+// }
+
+// function tablaDeMultiplicar(base) {
+//     for (let i = 0; i <= 10; i++) {
+//         console.log(`${base} x ${i} = ${base*i}.`)
+//     }
+// }
+
+// let numeroMultiplicar = validarDesdeHasta(1, 10)
+
+// tablaDeMultiplicar(numeroMultiplicar)
+
+function acumuladorWhile() {
+    let acumulador = 0
+    let num = -1 
+    while (num !== 0) {
+        num = +prompt("Ingrese otro número para acumular:")
+        acumulador += num
+    }
+    return acumulador
+}
+
+let acumuladoEjercicio3 = acumuladorWhile()
+console.log(`El valor acumulado en el while es: ${acumuladorWhile()}`)
+
+// function acumuladorToWhile() {
+//     let num = ""
+//     let acumulador = 0
+
+//     do {
+//         num = +prompt("Ingrese un número a acumular")
+//         acumulador += num
+//     } while (num !== 0)
+
+//     return acumulador
+// }
+
+// console.log(`El valor acumulado es: ${acumuladorToWhile()}.`)
+
+// function recorrerObjeto(objeto) {
+//     for (key in objeto) {
+//         console.log(key)
+//     }
+// }
+
+// let persona = {
+//     name: "Ricardo",
+//     lastName: "Perez",
+//     origin: "main",
+//     studies: true
+// }
+
+// recorrerObjeto(persona)
+
+// --------------------------------- Difficulty Level: Medium ---------------------------------
+
+// function ingresarHastaIgualar(acumulado) {
+//     let num = +prompt("Ingrese un número")
+//     while (num != acumulado) {
+//         if (num > acumulado){
+//             console.log("El número ingresado es mayor al acumulado.")
+//         } else {
+//             console.log("El número ingresado es menor al acumulado.")
+//         }
+        
+//         num = +prompt("Ingrese otro número") 
+//     }
+//     console.log("Coincidieron ambos números")
+// }
+
+// ingresarHastaIgualar(acumuladoEjercicio3)
